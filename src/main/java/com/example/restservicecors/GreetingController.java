@@ -27,13 +27,11 @@ public class GreetingController {
 
 	@GetMapping("/greeting-javaconfig")
 	public ResponseEntity<Greeting> greetingWithJavaconfig(@RequestParam(required=false, defaultValue="World") String name) {
-		System.out.println("==== in greeting ====");
 		return ResponseEntity.ok().body( new Greeting(counter.incrementAndGet(), String.format(template, name)) );
 	}
 
 	@RequestMapping(value = "/process",	method = RequestMethod.POST)
 	public ResponseEntity<Object> process(@RequestBody Map<String, Object> payload) throws Exception {
-	  System.out.println(payload);
 	  return ResponseEntity.ok().body(payload);
 	}
 
