@@ -18,7 +18,8 @@ public class RestServiceCorsApplication {
 
 	public static final String[] ALLOWED_ORIGINS = {
 		"http://localhost:4200",
-		"http://test.com"
+		"http://test.com",
+		"https://fids.paas.ups.com"
 };
 
 	public static void main(String[] args) {
