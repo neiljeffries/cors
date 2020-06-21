@@ -14,13 +14,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class GreetingController {
 
-	// public class Fizzle{
-	// 	private List<String> foo;
-	// 	private boolean bar;
-	// 	private int baz;
-	// 	// getters and setters omitted
-	// }
-
 	private static final String template = "Hello, %s!";
 	private final AtomicLong counter = new AtomicLong();
 
